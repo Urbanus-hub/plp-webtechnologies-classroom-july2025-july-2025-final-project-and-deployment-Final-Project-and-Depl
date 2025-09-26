@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPhone Pro | Revolutionary Smartphone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">TechPhone</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>TechPhone Pro</h1>
+                <p class="tagline">Revolutionary Technology in Your Pocket</p>
+                <div class="price">$899</div>
+                <a href="#pre-order" class="btn btn-primary">Pre-Order Now</a>
+            </div>
+            <div class="hero-image">
+                <div class="phone-container">
+                    <img id="phone-image" src="images/phone-black.png" alt="TechPhone Pro" class="phone-img">
+                    <div class="color-selector">
+                        <span class="color-option active" data-color="black" style="background-color: #333;"></span>
+                        <span class="color-option" data-color="blue" style="background-color: #1a73e8;"></span>
+                        <span class="color-option" data-color="white" style="background-color: #f1f1f1;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Revolutionary Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>108MP Camera</h3>
+                    <p>Professional-grade photography with advanced AI processing</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>A16 Bionic Chip</h3>
+                    <p>Blazing-fast performance for gaming and multitasking</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>All-Day Battery</h3>
+                    <p>5000mAh battery with 65W fast charging capability</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>6.7" AMOLED</h3>
+                    <p>Stunning display with 120Hz refresh rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Explore TechPhone Pro</h2>
+            <div class="gallery-container">
+                <div class="main-image">
+                    <img id="gallery-main" src="images/gallery-main.jpg" alt="TechPhone Pro Gallery">
+                </div>
+                <div class="thumbnails">
+                    <img src="images/gallery-1.jpg" alt="Phone view 1" class="thumbnail active">
+                    <img src="images/gallery-2.jpg" alt="Phone view 2" class="thumbnail">
+                    <img src="images/gallery-3.jpg" alt="Phone view 3" class="thumbnail">
+                    <img src="images/gallery-4.jpg" alt="Phone view 4" class="thumbnail">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specs">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="specs-table">
+                <div class="spec-row">
+                    <div class="spec-label">Display</div>
+                    <div class="spec-value">6.7" AMOLED, 120Hz, 3200 x 1440</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Processor</div>
+                    <div class="spec-value">A16 Bionic with 6-core CPU</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Memory</div>
+                    <div class="spec-value">12GB RAM, 256GB/512GB Storage</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Camera</div>
+                    <div class="spec-value">108MP Main, 12MP Ultra-wide, 8MP Telephoto</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Battery</div>
+                    <div class="spec-value">5000mAh, 65W Wired, 30W Wireless</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">OS</div>
+                    <div class="spec-value">TechOS 15 (Based on Android 14)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-order Section -->
+    <section id="pre-order" class="pre-order">
+        <div class="container">
+            <h2 class="section-title">Pre-Order TechPhone Pro</h2>
+            <p class="pre-order-subtitle">Be the first to experience the future of mobile technology</p>
+            <form id="pre-order-form" class="pre-order-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="storage">Storage Option</label>
+                    <select id="storage" required>
+                        <option value="">Select Storage</option>
+                        <option value="256">256GB - $899</option>
+                        <option value="512">512GB - $1099</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="color">Color</label>
+                    <select id="color" required>
+                        <option value="">Select Color</option>
+                        <option value="black">Midnight Black</option>
+                        <option value="blue">Ocean Blue</option>
+                        <option value="white">Pearl White</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Pre-Order Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TechPhone</h2>
+                    <p>Revolutionary mobile technology</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TechPhone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
