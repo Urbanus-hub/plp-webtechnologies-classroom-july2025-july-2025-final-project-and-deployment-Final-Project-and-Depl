@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechPhone Pro Plus | Enhanced Pro Experience</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">TechPhone</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-hero-content">
+          <div class="product-info">
+            <h1>TechPhone Pro Plus</h1>
+            <p class="product-tagline">
+              Enhanced pro experience with larger display
+            </p>
+            <div class="price">
+              <span class="current-price">$999</span>
+              <span class="original-price">$1,099</span>
+            </div>
+            <div class="product-colors">
+              <h3>Available Colors:</h3>
+              <div class="color-options">
+                <div class="color-option active" data-color="pro-plus"></div>
+                <div class="color-option" data-color="black"></div>
+                <div class="color-option" data-color="blue"></div>
+              </div>
+            </div>
+            <button class="cta-button">Buy Now</button>
+          </div>
+          <div class="product-image">
+            <img
+              id="product-img"
+              src="images/phone-pro-plus.png"
+              alt="TechPhone Pro Plus"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Specifications -->
+    <section class="product-specs">
+      <div class="container">
+        <h2>Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Display</h3>
+            <p>
+              6.8" Super AMOLED Plus<br />3088x1440 resolution<br />120Hz
+              adaptive refresh
+            </p>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-microchip"></i>
+            <h3>Processor</h3>
+            <p>A16 Bionic Plus<br />8-core CPU<br />6-core GPU</p>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-camera"></i>
+            <h3>Camera</h3>
+            <p>
+              Enhanced triple 48MP<br />Ultra Wide & Telephoto<br />Cinematic 4K
+              recording
+            </p>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-battery-full"></i>
+            <h3>Battery</h3>
+            <p>
+              4300mAh capacity<br />Fast wireless & reverse charging<br />Up to
+              30 hours video
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plus Features -->
+    <section class="plus-features">
+      <div class="container">
+        <h2>Pro Plus Advantages</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <i class="fas fa-expand-arrows-alt"></i>
+            <h3>Larger Display</h3>
+            <p>
+              6.8" screen provides more space for productivity and entertainment
+            </p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-memory"></i>
+            <h3>More Storage</h3>
+            <p>Starting at 256GB with options up to 1TB for all your content</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-charging-station"></i>
+            <h3>Reverse Charging</h3>
+            <p>Charge other devices wirelessly using your phone's battery</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-paintbrush"></i>
+            <h3>S Pen Support</h3>
+            <p>
+              Built-in stylus for note-taking, drawing, and precise navigation
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Gallery -->
+    <section class="interactive-gallery">
+      <div class="container">
+        <h2>See It In Action</h2>
+        <div class="gallery-main">
+          <img
+            id="main-gallery-img"
+            src="images/gallery-main.jpg"
+            alt="TechPhone Pro Plus"
+          />
+        </div>
+        <div class="gallery-thumbnails">
+          <img
+            class="thumb active"
+            src="images/gallery-1.jpg"
+            alt="Gallery 1"
+            onclick="changeGalleryImage(this)"
+          />
+          <img
+            class="thumb"
+            src="images/gallery-2.jpg"
+            alt="Gallery 2"
+            onclick="changeGalleryImage(this)"
+          />
+          <img
+            class="thumb"
+            src="images/gallery-3.jpg"
+            alt="Gallery 3"
+            onclick="changeGalleryImage(this)"
+          />
+          <img
+            class="thumb"
+            src="images/gallery-4.jpg"
+            alt="Gallery 4"
+            onclick="changeGalleryImage(this)"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Deep Dive -->
+    <section class="tech-deep-dive">
+      <div class="container">
+        <h2>Technical Excellence</h2>
+        <div class="tech-tabs">
+          <button class="tab-button active" onclick="showTab('performance')">
+            Performance
+          </button>
+          <button class="tab-button" onclick="showTab('camera')">Camera</button>
+          <button class="tab-button" onclick="showTab('battery')">
+            Battery
+          </button>
+          <button class="tab-button" onclick="showTab('design')">Design</button>
+        </div>
+
+        <div id="performance" class="tab-content active">
+          <h3>Unmatched Performance</h3>
+          <p>
+            The A16 Bionic Plus chip delivers up to 20% faster CPU performance
+            and 35% faster GPU performance compared to the standard Pro model.
+            Perfect for demanding applications, gaming, and multitasking.
+          </p>
+          <ul>
+            <li>8-core CPU with 2 performance + 6 efficiency cores</li>
+            <li>16-core Neural Engine for advanced AI processing</li>
+            <li>12GB RAM for seamless multitasking</li>
+          </ul>
+        </div>
+
+        <div id="camera" class="tab-content">
+          <h3>Professional Photography</h3>
+          <p>
+            Enhanced camera system with improved low-light performance, advanced
+            computational photography, and professional video recording
+            capabilities.
+          </p>
+          <ul>
+            <li>48MP main sensor with sensor-shift stabilization</li>
+            <li>12MP ultra-wide with macro capabilities</li>
+            <li>12MP telephoto with 3x optical zoom</li>
+            <li>ProRAW and ProRes recording support</li>
+          </ul>
+        </div>
+
+        <div id="battery" class="tab-content">
+          <h3>All-Day Power</h3>
+          <p>
+            Advanced battery management and efficient chip design provide
+            exceptional battery life, plus convenient charging options.
+          </p>
+          <ul>
+            <li>Up to 30 hours video playback</li>
+            <li>25W fast wired charging</li>
+            <li>15W MagSafe wireless charging</li>
+            <li>5W reverse wireless charging</li>
+          </ul>
+        </div>
+
+        <div id="design" class="tab-content">
+          <h3>Premium Materials</h3>
+          <p>
+            Crafted with precision using premium materials for durability and
+            elegance.
+          </p>
+          <ul>
+            <li>Aerospace-grade aluminum frame</li>
+            <li>Ceramic Shield front glass</li>
+            <li>IP68 water resistance rating</li>
+            <li>Available in three stunning finishes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>TechPhone</h3>
+            <p>
+              Revolutionizing mobile technology with innovative smartphones that
+              enhance your digital lifestyle.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="techphone-pro.html">TechPhone Pro</a></li>
+              <li><a href="techphone-lite.html">TechPhone Lite</a></li>
+              <li><a href="techphone-max.html">TechPhone Max</a></li>
+              <li><a href="techphone-ultra.html">TechPhone Ultra</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Shipping</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechPhone. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
